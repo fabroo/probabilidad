@@ -20,8 +20,7 @@ figurita = sample(album, size = 1, replace = FALSE)
 figurita
 ```
 
-Simular el llenado de un album de 6 figuritas e indicar cuantas figuritas se debieron
-comprar para completarlo.
+Simular el llenado de un album de 6 figuritas e indicar cuantas figuritas se debieron comprar para completarlo.
 
 ```{r}
 
@@ -66,7 +65,7 @@ Calcular Nrep=1000 veces la funcion anterior utilizando figusTotal=6 y guarde lo
 
 1.  El numero de figuritas hay que comprar, en media, para completar el album
 2.  La probabilidad de completar el album comprando 16 figuritas
-3.  El numero de figuritas hay que comprar, en media, para completar el album
+3.  El numero de figuritas que hay que comprar, en media, para tener probabilidad del 90% de completar el album
 
 Sea:
 
@@ -77,15 +76,111 @@ for (i in 1:NReps){
   repeticiones <- append(repeticiones, cuantasFigus(6))
 }
 
+hist(repeticiones)
+
 inciso_a <- round(mean(repeticiones))
 print(paste("a) En promedio la cantidad de figuritas que hay que comprar es de:", inciso_a))
-inciso_b <- length(repeticiones[repeticiones == 16]) / length(repeticiones)
+inciso_b <- length(repeticiones[repeticiones <= 16]) / length(repeticiones)
 print(paste("b) La probabilidad de completar el album comprando 16 figuritas es de:", inciso_b))
 
+proba_de_completar <- 0
+i <- 0
+while (proba_de_completar < 0.9){
+  proba_de_completar <- (length(repeticiones[repeticiones <= i]) / length(repeticiones))
+  i <- i + 1
+}
+inciso_c <- i
+print(paste("c) La cantidad de figus que hay que comprar para tener proba 90 es", inciso_c))
 
-hist(repeticiones)
 ```
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+# Caso Intermedio
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+Calcular Nrep=100 veces la funci´on cuantasFigus(figusTotal=640) utilizando
+figusTotal=640 y guardar los resultados obtenidos en cada repetici´on en una
+lista. Con los resultados obtenidos estimar cu´antas figuritas hay que comprar, en
+promedio, para completar el ´album (de 640 figuritas).
+
+```{r}
+repeticiones <- c()
+NReps <- 100
+for (i in 1:NReps){
+  repeticiones <- append(repeticiones, cuantasFigus(640))
+}
+
+inciso_a <- round(mean(repeticiones))
+print(paste("a) En promedio la cantidad de figuritas que hay que comprar es de:", inciso_a))
+```
+
+# Con paquetes
+
+Simular la generación de un paquete con 5 figuritas, sabiendo que el álbum es de 640. Notemos que, cómo en la vida real, pueden haber figuritas repetidas en un paquete.
+
+```{r}
+sample(1:640, 5, replace = TRUE)
+```
+
+Implementar una función genPaquete(figusTotal, figusPaquete) que dado el
+tamaño del álbum (figusTotal) y la cantidad de figuritas por paquete (figusPaquete)
+genere un paquete de figuritas al azar. Notemos que, cómo en la vida real, pueden
+haber figuritas repetidas en un paquete.
+
+```{r}
+genPaquete <- function(figusTotal, figusPaquete) {
+  paquete <- sample(1:figusTotal, figusPaquete, replace = TRUE)
+  return(paquete)
+}
+genPaquete(640, 2)
+```
+
+Implementar una función cuantosPaquetes(figusTotal, figusPaquete) que
+dado el tamaño del álbum (figusTotal) y la cantidad de figuritas por paquete
+(figusPaquete) simule el llenado del álbum y devuelva cuántos paquetes se debieron adquirir para completarlo.
+
+```{r}
+cuantosPaquetes <- function(figusTotal, figusPaquete) {
+  album <- rep(FALSE, figusTotal) 
+  paquetes_comprados <- 0
+  
+  while (any(album == FALSE)) {
+    paquete <- genPaquete(figusTotal, figusPaquete)
+    album[paquete] <- TRUE
+    paquetes_comprados <- paquetes_comprados + 1
+  }
+  
+  return(paquetes_comprados)
+}
+
+cuantosPaquetes(100, 5)
+```
+
+Calcular Nrep=100 veces la función cuantosPaquetes, utilizando figusTotal=640, figusPaquete=5 y guarde los resultados obtenidos en una lista. Calcular
+
+1.  El número de figuritas hay que comprar, en media, para completar el álbum.
+2.  La probabilidad de completar el álbum comprando 300 paquetes figuritas.
+3.  El número de figuritas que hay que comprar para tener probabilidad del 90% de completar el álbum
+
+```{r}
+figusTotal <- 640
+figusPaquete <- 5
+Nrep <- 100
+
+cant_figus = replicate(Nrep, cuantosPaquetes(figusTotal, figusPaquete))
+
+# El número de figuritas hay que comprar, en media, para completar el álbum.
+media_paquetes <- mean(cant_figus)
+print(paste("Número medio de paquetes para completar el álbum:", media_paquetes))
+
+# La probabilidad de completar el álbum comprando 300 paquetes figuritas.
+prob_300_paquetes <- sum(cant_figus <= 300) / Nrep
+print(paste("Probabilidad de completar el álbum con 300 paquetes:", prob_300_paquetes))
+
+# El número de figuritas que hay que comprar para tener probabilidad del 90% de completar el álbum
+proba_de_completar <- 0
+i <- 0
+while (proba_de_completar < 0.9){
+  proba_de_completar <- (sum(cant_figus <= i)) / Nrep
+  i <- i + 1
+}
+print(paste("El número de paquetes para tener probabilidad del 90% es", i))
+```

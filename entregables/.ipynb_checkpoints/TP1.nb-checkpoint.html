@@ -1765,21 +1765,35 @@ display: none;
 figuritas</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlndXJpdGFcblxuYGBgIn0= -->
-<pre class="r"><code>figurita
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDNcbiJ9 -->
-<pre><code>[1] 3</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Simular el llenado de un album de 6 figuritas e indicar cuantas
-figuritas se debieron comprar para completarlo.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5hbGJ1bSA8LSAxOjZcbmNvbXBsZXRhZGFzIDwtICgxOjYpICogMFxuY29udGFkb3IgPC0gMFxuXG5zdW1hIDwtIHN1bShjb21wbGV0YWRhcylcbndoaWxlIChzdW1hIDwgbGVuZ3RoKGFsYnVtKSl7XG4gICBmaWd1cml0YSA9IHNhbXBsZShhbGJ1bSwgc2l6ZSA9IDEsIHJlcGxhY2UgPSBGQUxTRSlcbiAgIGNvbnRhZG9yIDwtIGNvbnRhZG9yICsgMVxuICAgY29tcGxldGFkYXNbZmlndXJpdGFdID0gMVxuICAgc3VtYSA9IHN1bShjb21wbGV0YWRhcylcbn1cblxuY29udGFkb3JcbmBgYCJ9 -->
-<pre class="r"><code>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuYWxidW0gPC0gMTo2XG5maWd1cml0YSA9IHNhbXBsZShhbGJ1bSwgc2l6ZSA9IDEsIHJlcGxhY2UgPSBGQUxTRSlcblxuZmlndXJpdGFcbmBgYFxuYGBgIn0= -->
+<pre class="r"><code>```r
+album &lt;- 1:6
+figurita = sample(album, size = 1, replace = FALSE)
+
+figurita</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+Simular el llenado de un album de 6 figuritas e indicar cuantas figuritas se debieron comprar para completarlo.
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuXG5hbGJ1bSA8LSAxOjZcbmNvbXBsZXRhZGFzIDwtICgxOjYpICogMFxuY29udGFkb3IgPC0gMFxuXG5zdW1hIDwtIHN1bShjb21wbGV0YWRhcylcbndoaWxlIChzdW1hIDwgbGVuZ3RoKGFsYnVtKSl7XG4gICBmaWd1cml0YSA9IHNhbXBsZShhbGJ1bSwgc2l6ZSA9IDEsIHJlcGxhY2UgPSBGQUxTRSlcbiAgIGNvbnRhZG9yIDwtIGNvbnRhZG9yICsgMVxuICAgY29tcGxldGFkYXNbZmlndXJpdGFdID0gMVxuICAgc3VtYSA9IHN1bShjb21wbGV0YWRhcylcbn1cblxuY29udGFkb3JcbmBgYFxuYGBgIn0= --&gt;
+
+```r
+```r
+
 album &lt;- 1:6
 completadas &lt;- (1:6) * 0
 contador &lt;- 0
@@ -1793,19 +1807,37 @@ while (suma &lt; length(album)){
 }
 
 contador</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDhcbiJ9 -->
-<pre><code>[1] 8</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Implementar una funcion cuantasFigus(figusTotal) que, dado el tamaño
-del album (figusTotal), simule su llenado y devuelva la cantidad de
-figuritas que se debieron adquirir para completarlo.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY3VhbnRhc0ZpZ3VzIDwtIGZ1bmN0aW9uKHRhbSl7XG4gIGFsYnVtIDwtIDE6dGFtXG4gIGNvbXBsZXRhZGFzIDwtICgxOnRhbSkgKiAwXG4gIGNvbnRhZG9yIDwtIDBcblxuICBzdW1hIDwtIHN1bShjb21wbGV0YWRhcylcbiAgd2hpbGUgKHN1bWEgPCBsZW5ndGgoYWxidW0pKXtcbiAgICBmaWd1cml0YSA9IHNhbXBsZShhbGJ1bSwgc2l6ZSA9IDEsIHJlcGxhY2UgPSBGQUxTRSlcbiAgICBjb250YWRvciA8LSBjb250YWRvciArIDFcbiAgICBjb21wbGV0YWRhc1tmaWd1cml0YV0gPSAxXG4gICAgc3VtYSA9IHN1bShjb21wbGV0YWRhcylcbiAgfVxuXG4gIHJldHVybihjb250YWRvcikgXG59XG5cbmN1YW50YXNGaWd1cyg2KVxuYGBgIn0= -->
-<pre class="r"><code>cuantasFigus &lt;- function(tam){
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiWzFdIDE1XG4ifQ== --&gt;
+</code></pre>
+<p>[1] 15</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+Implementar una funcion cuantasFigus(figusTotal) que, dado el tamaño del album (figusTotal), simule su llenado y devuelva la cantidad de figuritas que se debieron adquirir para completarlo.
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuY3VhbnRhc0ZpZ3VzIDwtIGZ1bmN0aW9uKHRhbSl7XG4gIGFsYnVtIDwtIDE6dGFtXG4gIGNvbXBsZXRhZGFzIDwtICgxOnRhbSkgKiAwXG4gIGNvbnRhZG9yIDwtIDBcblxuICBzdW1hIDwtIHN1bShjb21wbGV0YWRhcylcbiAgd2hpbGUgKHN1bWEgPCBsZW5ndGgoYWxidW0pKXtcbiAgICBmaWd1cml0YSA9IHNhbXBsZShhbGJ1bSwgc2l6ZSA9IDEsIHJlcGxhY2UgPSBGQUxTRSlcbiAgICBjb250YWRvciA8LSBjb250YWRvciArIDFcbiAgICBjb21wbGV0YWRhc1tmaWd1cml0YV0gPSAxXG4gICAgc3VtYSA9IHN1bShjb21wbGV0YWRhcylcbiAgfVxuXG4gIHJldHVybihjb250YWRvcikgXG59XG5cbmN1YW50YXNGaWd1cyg2KVxuYGBgXG5gYGAifQ== --&gt;
+
+```r
+```r
+cuantasFigus &lt;- function(tam){
   album &lt;- 1:tam
   completadas &lt;- (1:tam) * 0
   contador &lt;- 0
@@ -1822,203 +1854,105 @@ figuritas que se debieron adquirir para completarlo.</p>
 }
 
 cuantasFigus(6)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDExXG4ifQ== -->
-<pre><code>[1] 11</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Calcular Nrep=1000 veces la funcion anterior utilizando figusTotal=6
-y guarde los resultados obtenidos en cada repeticion. Con los resultados
-obtenidos para un album de seis figuritas, estimar:</p>
-<ol style="list-style-type: decimal">
-<li>El numero de figuritas hay que comprar, en media, para completar el
-album</li>
-<li>La probabilidad de completar el album comprando 16 figuritas</li>
-<li>El numero de figuritas que hay que comprar, en media, para tener
-probabilidad del 90% de completar el album</li>
-</ol>
-<p>Sea:</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVwZXRpY2lvbmVzIDwtIGMoKVxuTlJlcHMgPC0gMTAwMFxuZm9yIChpIGluIDE6TlJlcHMpe1xuICByZXBldGljaW9uZXMgPC0gYXBwZW5kKHJlcGV0aWNpb25lcywgY3VhbnRhc0ZpZ3VzKDYpKVxufVxuXG5oaXN0KHJlcGV0aWNpb25lcylcbmBgYCJ9 -->
-<pre class="r"><code>repeticiones &lt;- c()
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiWzFdIDIwXG4ifQ== --&gt;
+</code></pre>
+<p>[1] 20</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+Calcular Nrep=1000 veces la funcion anterior utilizando figusTotal=6 y guarde los resultados obtenidos en cada repeticion. Con los resultados obtenidos para un album de seis figuritas, estimar:
+
+1.  El numero de figuritas hay que comprar, en media, para completar el album
+2.  La probabilidad de completar el album comprando 16 figuritas
+3.  El numero de figuritas hay que comprar, en media, para completar el album
+
+Sea:
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxucmVwZXRpY2lvbmVzIDwtIGMoKVxuTlJlcHMgPC0gMTAwMFxuZm9yIChpIGluIDE6TlJlcHMpe1xuICByZXBldGljaW9uZXMgPC0gYXBwZW5kKHJlcGV0aWNpb25lcywgY3VhbnRhc0ZpZ3VzKDYpKVxufVxuXG5pbmNpc29fYSA8LSByb3VuZChtZWFuKHJlcGV0aWNpb25lcykpXG5wcmludChwYXN0ZShcXGEpIEVuIHByb21lZGlvIGxhIGNhbnRpZGFkIGRlIGZpZ3VyaXRhcyBxdWUgaGF5IHF1ZSBjb21wcmFyIGVzIGRlOlxcLCBpbmNpc29fYSkpXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+repeticiones &lt;- c()
 NReps &lt;- 1000
 for (i in 1:NReps){
   repeticiones &lt;- append(repeticiones, cuantasFigus(6))
 }
 
+inciso_a &lt;- round(mean(repeticiones))
+print(paste(\a) En promedio la cantidad de figuritas que hay que comprar es de:\, inciso_a))</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiWzFdIFxcYSkgRW4gcHJvbWVkaW8gbGEgY2FudGlkYWQgZGUgZmlndXJpdGFzIHF1ZSBoYXkgcXVlIGNvbXByYXIgZXMgZGU6IDE1XFxcbiJ9 --&gt;
+</code></pre>
+<p>[1] ) En promedio la cantidad de figuritas que hay que comprar es de:
+15<br />
+</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuaW5jaXNvX2IgPC0gbGVuZ3RoKHJlcGV0aWNpb25lc1tyZXBldGljaW9uZXMgPT0gMTZdKSAvIGxlbmd0aChyZXBldGljaW9uZXMpXG5wcmludChwYXN0ZShcXGIpIExhIHByb2JhYmlsaWRhZCBkZSBjb21wbGV0YXIgZWwgYWxidW0gY29tcHJhbmRvIDE2IGZpZ3VyaXRhcyBlcyBkZTpcXCwgaW5jaXNvX2IpKVxuYGBgXG5gYGAifQ== --&gt;
+
+```r
+```r
+inciso_b &lt;- length(repeticiones[repeticiones == 16]) / length(repeticiones)
+print(paste(\b) La probabilidad de completar el album comprando 16 figuritas es de:\, inciso_b))</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiWzFdIFxcYikgTGEgcHJvYmFiaWxpZGFkIGRlIGNvbXBsZXRhciBlbCBhbGJ1bSBjb21wcmFuZG8gMTYgZmlndXJpdGFzIGVzIGRlOiAwLjA1NFxcXG4ifQ== --&gt;
+</code></pre>
+<p>[1] La probabilidad de completar el album comprando 16 figuritas es
+de: 0.054<br />
+</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuaGlzdChyZXBldGljaW9uZXMpXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
 hist(repeticiones)</code></pre>
+<p>```</p>
 <!-- rnb-source-end -->
-<!-- rnb-plot-begin eyJoZWlnaHQiOjQwOS43NjUxLCJ3aWR0aCI6NjYzLCJzaXplX2JlaGF2aW9yIjowLCJjb25kaXRpb25zIjpbXX0= -->
-<p><img src="data:image/png;base64,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" /></p>
+<!-- rnb-plot-begin -->
+<p><img src="data:image/png;base64,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" /></p>
 <!-- rnb-plot-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5pbmNpc29fYSA8LSByb3VuZChtZWFuKHJlcGV0aWNpb25lcykpXG5wcmludChwYXN0ZShcImEpIEVuIHByb21lZGlvIGxhIGNhbnRpZGFkIGRlIGZpZ3VyaXRhcyBxdWUgaGF5IHF1ZSBjb21wcmFyIGVzIGRlOlwiLCBpbmNpc29fYSkpXG5gYGAifQ== -->
-<pre class="r"><code>
-inciso_a &lt;- round(mean(repeticiones))
-print(paste(&quot;a) En promedio la cantidad de figuritas que hay que comprar es de:&quot;, inciso_a))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiYSkgRW4gcHJvbWVkaW8gbGEgY2FudGlkYWQgZGUgZmlndXJpdGFzIHF1ZSBoYXkgcXVlIGNvbXByYXIgZXMgZGU6IDE0XCJcbiJ9 -->
-<pre><code>[1] &quot;a) En promedio la cantidad de figuritas que hay que comprar es de: 14&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5jaXNvX2IgPC0gbGVuZ3RoKHJlcGV0aWNpb25lc1tyZXBldGljaW9uZXMgPT0gMTZdKSAvIGxlbmd0aChyZXBldGljaW9uZXMpXG5wcmludChwYXN0ZShcImIpIExhIHByb2JhYmlsaWRhZCBkZSBjb21wbGV0YXIgZWwgYWxidW0gY29tcHJhbmRvIDE2IGZpZ3VyaXRhcyBlcyBkZTpcIiwgaW5jaXNvX2IpKVxuYGBgIn0= -->
-<pre class="r"><code>inciso_b &lt;- length(repeticiones[repeticiones == 16]) / length(repeticiones)
-print(paste(&quot;b) La probabilidad de completar el album comprando 16 figuritas es de:&quot;, inciso_b))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiYikgTGEgcHJvYmFiaWxpZGFkIGRlIGNvbXBsZXRhciBlbCBhbGJ1bSBjb21wcmFuZG8gMTYgZmlndXJpdGFzIGVzIGRlOiAwLjA1MVwiXG4ifQ== -->
-<pre><code>[1] &quot;b) La probabilidad de completar el album comprando 16 figuritas es de: 0.051&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJvYmFfZGVfY29tcGxldGFyIDwtIDBcbmkgPC0gMVxud2hpbGUgKHByb2JhX2RlX2NvbXBsZXRhciA8IDAuOSl7XG4gIHByb2JhX2RlX2NvbXBsZXRhciA8LSAobGVuZ3RoKHJlcGV0aWNpb25lc1tyZXBldGljaW9uZXMgPD0gaV0pIC8gbGVuZ3RoKHJlcGV0aWNpb25lcykpXG4gIGkgPC0gaSArIDFcbn1cbmluY2lzb19jIDwtIGlcbnByaW50KHBhc3RlKFwiYykgTGEgY2FudGlkYWQgZGUgZmlndXMgcXVlIGhheSBxdWUgY29tcHJhciBwYXJhIHRlbmVyIHByb2JhIDkwIGVzXCIsIGluY2lzb19jKSlcbmBgYCJ9 -->
-<pre class="r"><code>proba_de_completar &lt;- 0
-i &lt;- 1
-while (proba_de_completar &lt; 0.9){
-  proba_de_completar &lt;- (length(repeticiones[repeticiones &lt;= i]) / length(repeticiones))
-  i &lt;- i + 1
-}
-inciso_c &lt;- i
-print(paste(&quot;c) La cantidad de figus que hay que comprar para tener proba 90 es&quot;, inciso_c))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiYykgTGEgY2FudGlkYWQgZGUgZmlndXMgcXVlIGhheSBxdWUgY29tcHJhciBwYXJhIHRlbmVyIHByb2JhIDkwIGVzIDIzXCJcbiJ9 -->
-<pre><code>[1] &quot;c) La cantidad de figus que hay que comprar para tener proba 90 es 23&quot;</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-</div>
-<div id="caso-intermedio" class="section level1">
-<h1>Caso Intermedio</h1>
-<p>Calcular Nrep=100 veces la funci´on cuantasFigus(figusTotal=640)
-utilizando figusTotal=640 y guardar los resultados obtenidos en cada
-repetici´on en una lista. Con los resultados obtenidos estimar cu´antas
-figuritas hay que comprar, en promedio, para completar el ´album (de 640
-figuritas).</p>
+<p>When you save the notebook, an HTML file containing the code and
+output will be saved alongside it (click the <em>Preview</em> button or
+press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
+<p>The preview shows you a rendered HTML copy of the contents of the
+editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not
+run any R code chunks. Instead, the output of the chunk when it was last
+run in the editor is displayed.</p>
 <!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVwZXRpY2lvbmVzIDwtIGMoKVxuTlJlcHMgPC0gMTAwXG5mb3IgKGkgaW4gMTpOUmVwcyl7XG4gIHJlcGV0aWNpb25lcyA8LSBhcHBlbmQocmVwZXRpY2lvbmVzLCBjdWFudGFzRmlndXMoNjQwKSlcbn1cblxuaW5jaXNvX2EgPC0gcm91bmQobWVhbihyZXBldGljaW9uZXMpKVxucHJpbnQocGFzdGUoXCJhKSBFbiBwcm9tZWRpbyBsYSBjYW50aWRhZCBkZSBmaWd1cml0YXMgcXVlIGhheSBxdWUgY29tcHJhciBlcyBkZTpcIiwgaW5jaXNvX2EpKVxuYGBgIn0= -->
-<pre class="r"><code>repeticiones &lt;- c()
-NReps &lt;- 100
-for (i in 1:NReps){
-  repeticiones &lt;- append(repeticiones, cuantasFigus(640))
-}
-
-inciso_a &lt;- round(mean(repeticiones))
-print(paste(&quot;a) En promedio la cantidad de figuritas que hay que comprar es de:&quot;, inciso_a))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiYSkgRW4gcHJvbWVkaW8gbGEgY2FudGlkYWQgZGUgZmlndXJpdGFzIHF1ZSBoYXkgcXVlIGNvbXByYXIgZXMgZGU6IDQ1MjBcIlxuIn0= -->
-<pre><code>[1] &quot;a) En promedio la cantidad de figuritas que hay que comprar es de: 4520&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="con-paquetes" class="section level1">
-<h1>Con paquetes</h1>
-<p>Simular la generación de un paquete con 5 figuritas, sabiendo que el
-álbum es de 640. Notemos que, cómo en la vida real, pueden haber
-figuritas repetidas en un paquete.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2FtcGxlKDE6NjQwLCA1LCByZXBsYWNlID0gVFJVRSlcblxuYGBgIn0= -->
-<pre class="r"><code>sample(1:640, 5, replace = TRUE)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDI4OCA2MzMgMTIyIDYwNSAxMjNcbiJ9 -->
-<pre><code>[1] 288 633 122 605 123</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Implementar una función genPaquete(figusTotal, figusPaquete) que dado
-el tamaño del álbum (figusTotal) y la cantidad de figuritas por paquete
-(figusPaquete) genere un paquete de figuritas al azar. Notemos que, cómo
-en la vida real, pueden haber figuritas repetidas en un paquete.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2VuUGFxdWV0ZSg2NDAsIDIpXG5cbmBgYCJ9 -->
-<pre class="r"><code>genPaquete(640, 2)
-</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDM3MiAgMjRcbiJ9 -->
-<pre><code>[1] 372  24</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Implementar una función cuantosPaquetes(figusTotal, figusPaquete) que
-dado el tamaño del álbum (figusTotal) y la cantidad de figuritas por
-paquete (figusPaquete) simule el llenado del álbum y devuelva cuántos
-paquetes se debieron adquirir para completarlo.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY3VhbnRvc1BhcXVldGVzIDwtIGZ1bmN0aW9uKGZpZ3VzVG90YWwsIGZpZ3VzUGFxdWV0ZSkge1xuICBhbGJ1bSA8LSByZXAoRkFMU0UsIGZpZ3VzVG90YWwpIFxuICBwYXF1ZXRlc19jb21wcmFkb3MgPC0gMFxuICBcbiAgd2hpbGUgKGFueShhbGJ1bSA9PSBGQUxTRSkpIHtcbiAgICBwYXF1ZXRlIDwtIGdlblBhcXVldGUoZmlndXNUb3RhbCwgZmlndXNQYXF1ZXRlKVxuICAgIGFsYnVtW3BhcXVldGVdIDwtIFRSVUVcbiAgICBwYXF1ZXRlc19jb21wcmFkb3MgPC0gcGFxdWV0ZXNfY29tcHJhZG9zICsgMVxuICB9XG4gIFxuICByZXR1cm4ocGFxdWV0ZXNfY29tcHJhZG9zKVxufVxuXG5jdWFudG9zUGFxdWV0ZXMoMTAwLCA1KVxuYGBgIn0= -->
-<pre class="r"><code>cuantosPaquetes &lt;- function(figusTotal, figusPaquete) {
-  album &lt;- rep(FALSE, figusTotal) 
-  paquetes_comprados &lt;- 0
-  
-  while (any(album == FALSE)) {
-    paquete &lt;- genPaquete(figusTotal, figusPaquete)
-    album[paquete] &lt;- TRUE
-    paquetes_comprados &lt;- paquetes_comprados + 1
-  }
-  
-  return(paquetes_comprados)
-}
-
-cuantosPaquetes(100, 5)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDk0XG4ifQ== -->
-<pre><code>[1] 94</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Calcular Nrep=100 veces la función cuantosPaquetes, utilizando
-figusTotal=640, figusPaquete=5 y guarde los resultados obtenidos en una
-lista. Calcular</p>
-<ol style="list-style-type: decimal">
-<li>El número de figuritas hay que comprar, en media, para completar el
-álbum.</li>
-<li>La probabilidad de completar el álbum comprando 300 paquetes
-figuritas.</li>
-<li>El número de figuritas que hay que comprar para tener probabilidad
-del 90% de completar el álbum</li>
-</ol>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlndXNUb3RhbCA8LSA2NDBcbmZpZ3VzUGFxdWV0ZSA8LSA1XG5OcmVwIDwtIDEwMFxuXG5jYW50X2ZpZ3VzID0gcmVwbGljYXRlKE5yZXAsIGN1YW50b3NQYXF1ZXRlcyhmaWd1c1RvdGFsLCBmaWd1c1BhcXVldGUpKVxuXG4jIEVsIG7Dum1lcm8gZGUgZmlndXJpdGFzIGhheSBxdWUgY29tcHJhciwgZW4gbWVkaWEsIHBhcmEgY29tcGxldGFyIGVsIMOhbGJ1bS5cbm1lZGlhX3BhcXVldGVzIDwtIG1lYW4oY2FudF9maWd1cylcbnByaW50KHBhc3RlKFwiTsO6bWVybyBtZWRpbyBkZSBwYXF1ZXRlcyBwYXJhIGNvbXBsZXRhciBlbCDDoWxidW06XCIsIG1lZGlhX3BhcXVldGVzKSlcbmBgYCJ9 -->
-<pre class="r"><code>figusTotal &lt;- 640
-figusPaquete &lt;- 5
-Nrep &lt;- 100
-
-cant_figus = replicate(Nrep, cuantosPaquetes(figusTotal, figusPaquete))
-
-# El número de figuritas hay que comprar, en media, para completar el álbum.
-media_paquetes &lt;- mean(cant_figus)
-print(paste(&quot;Número medio de paquetes para completar el álbum:&quot;, media_paquetes))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiTsO6bWVybyBtZWRpbyBkZSBwYXF1ZXRlcyBwYXJhIGNvbXBsZXRhciBlbCDDoWxidW06IDkyMC42M1wiXG4ifQ== -->
-<pre><code>[1] &quot;Número medio de paquetes para completar el álbum: 920.63&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBMYSBwcm9iYWJpbGlkYWQgZGUgY29tcGxldGFyIGVsIMOhbGJ1bSBjb21wcmFuZG8gMzAwIHBhcXVldGVzIGZpZ3VyaXRhcy5cbnByb2JfMzAwX3BhcXVldGVzIDwtIHN1bShjYW50X2ZpZ3VzIDw9IDMwMCkgLyBOcmVwXG5wcmludChwYXN0ZShcIlByb2JhYmlsaWRhZCBkZSBjb21wbGV0YXIgZWwgw6FsYnVtIGNvbiAzMDAgcGFxdWV0ZXM6XCIsIHByb2JfMzAwX3BhcXVldGVzKSlcbmBgYCJ9 -->
-<pre class="r"><code># La probabilidad de completar el álbum comprando 300 paquetes figuritas.
-prob_300_paquetes &lt;- sum(cant_figus &lt;= 300) / Nrep
-print(paste(&quot;Probabilidad de completar el álbum con 300 paquetes:&quot;, prob_300_paquetes))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiUHJvYmFiaWxpZGFkIGRlIGNvbXBsZXRhciBlbCDDoWxidW0gY29uIDMwMCBwYXF1ZXRlczogMFwiXG4ifQ== -->
-<pre><code>[1] &quot;Probabilidad de completar el álbum con 300 paquetes: 0&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBFbCBuw7ptZXJvIGRlIGZpZ3VyaXRhcyBxdWUgaGF5IHF1ZSBjb21wcmFyIHBhcmEgdGVuZXIgcHJvYmFiaWxpZGFkIGRlbCA5MCUgZGUgY29tcGxldGFyIGVsIMOhbGJ1bVxucHJvYmFfZGVfY29tcGxldGFyIDwtIDBcbmkgPC0gMFxud2hpbGUgKHByb2JhX2RlX2NvbXBsZXRhciA8IDAuOSl7XG4gIHByb2JhX2RlX2NvbXBsZXRhciA8LSAoc3VtKGNhbnRfZmlndXMgPD0gaSkpIC8gTnJlcFxuICBpIDwtIGkgKyAxXG59XG5wcmludChwYXN0ZShcIkVsIG7Dum1lcm8gZGUgcGFxdWV0ZXMgcGFyYSB0ZW5lciBwcm9iYWJpbGlkYWQgZGVsIDkwJSBlc1wiLCBpKSlcbmBgYCJ9 -->
-<pre class="r"><code># El número de figuritas que hay que comprar para tener probabilidad del 90% de completar el álbum
-proba_de_completar &lt;- 0
-i &lt;- 0
-while (proba_de_completar &lt; 0.9){
-  proba_de_completar &lt;- (sum(cant_figus &lt;= i)) / Nrep
-  i &lt;- i + 1
-}
-print(paste(&quot;El número de paquetes para tener probabilidad del 90% es&quot;, i))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiRWwgbsO6bWVybyBkZSBwYXF1ZXRlcyBwYXJhIHRlbmVyIHByb2JhYmlsaWRhZCBkZWwgOTAlIGVzIDExODhcIlxuIn0= -->
-<pre><code>[1] &quot;El número de paquetes para tener probabilidad del 90% es 1188&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKIyBUcmFiYWpvIFByw6FjdGljbyBGaWd1cml0YXMKCiMjIENvcnppbmkgRmFicml6aW8sIFBvbG9udWVyIEpvYXF1aW4KCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKIyBQcmltZXJhIFNpbXBsaWZpY2FjacOzbgoKU2ltdWxhciBlbCBuw7ptZXJvIGRlIHVuYSBmaWd1cml0YSBlbGVnaWRhIGFsIGF6YXIgc2kgZWwgYWxiw7ptIGVzIGRlIDYgZmlndXJpdGFzCgpgYGB7cn0KYWxidW0gPC0gMTo2CmZpZ3VyaXRhID0gc2FtcGxlKGFsYnVtLCBzaXplID0gMSwgcmVwbGFjZSA9IEZBTFNFKQoKZmlndXJpdGEKYGBgCgpTaW11bGFyIGVsIGxsZW5hZG8gZGUgdW4gYWxidW0gZGUgNiBmaWd1cml0YXMgZSBpbmRpY2FyIGN1YW50YXMgZmlndXJpdGFzIHNlIGRlYmllcm9uIGNvbXByYXIgcGFyYSBjb21wbGV0YXJsby4KCmBgYHtyfQoKYWxidW0gPC0gMTo2CmNvbXBsZXRhZGFzIDwtICgxOjYpICogMApjb250YWRvciA8LSAwCgpzdW1hIDwtIHN1bShjb21wbGV0YWRhcykKd2hpbGUgKHN1bWEgPCBsZW5ndGgoYWxidW0pKXsKICAgZmlndXJpdGEgPSBzYW1wbGUoYWxidW0sIHNpemUgPSAxLCByZXBsYWNlID0gRkFMU0UpCiAgIGNvbnRhZG9yIDwtIGNvbnRhZG9yICsgMQogICBjb21wbGV0YWRhc1tmaWd1cml0YV0gPSAxCiAgIHN1bWEgPSBzdW0oY29tcGxldGFkYXMpCn0KCmNvbnRhZG9yCmBgYAoKSW1wbGVtZW50YXIgdW5hIGZ1bmNpb24gY3VhbnRhc0ZpZ3VzKGZpZ3VzVG90YWwpIHF1ZSwgZGFkbyBlbCB0YW1hw7FvIGRlbCBhbGJ1bSAoZmlndXNUb3RhbCksIHNpbXVsZSBzdSBsbGVuYWRvIHkgZGV2dWVsdmEgbGEgY2FudGlkYWQgZGUgZmlndXJpdGFzIHF1ZSBzZSBkZWJpZXJvbiBhZHF1aXJpciBwYXJhIGNvbXBsZXRhcmxvLgoKYGBge3J9CmN1YW50YXNGaWd1cyA8LSBmdW5jdGlvbih0YW0pewogIGFsYnVtIDwtIDE6dGFtCiAgY29tcGxldGFkYXMgPC0gKDE6dGFtKSAqIDAKICBjb250YWRvciA8LSAwCgogIHN1bWEgPC0gc3VtKGNvbXBsZXRhZGFzKQogIHdoaWxlIChzdW1hIDwgbGVuZ3RoKGFsYnVtKSl7CiAgICBmaWd1cml0YSA9IHNhbXBsZShhbGJ1bSwgc2l6ZSA9IDEsIHJlcGxhY2UgPSBGQUxTRSkKICAgIGNvbnRhZG9yIDwtIGNvbnRhZG9yICsgMQogICAgY29tcGxldGFkYXNbZmlndXJpdGFdID0gMQogICAgc3VtYSA9IHN1bShjb21wbGV0YWRhcykKICB9CgogIHJldHVybihjb250YWRvcikgCn0KCmN1YW50YXNGaWd1cyg2KQpgYGAKCkNhbGN1bGFyIE5yZXA9MTAwMCB2ZWNlcyBsYSBmdW5jaW9uIGFudGVyaW9yIHV0aWxpemFuZG8gZmlndXNUb3RhbD02IHkgZ3VhcmRlIGxvcyByZXN1bHRhZG9zIG9idGVuaWRvcyBlbiBjYWRhIHJlcGV0aWNpb24uIENvbiBsb3MgcmVzdWx0YWRvcyBvYnRlbmlkb3MgcGFyYSB1biBhbGJ1bSBkZSBzZWlzIGZpZ3VyaXRhcywgZXN0aW1hcjoKCjEuICBFbCBudW1lcm8gZGUgZmlndXJpdGFzIGhheSBxdWUgY29tcHJhciwgZW4gbWVkaWEsIHBhcmEgY29tcGxldGFyIGVsIGFsYnVtCjIuICBMYSBwcm9iYWJpbGlkYWQgZGUgY29tcGxldGFyIGVsIGFsYnVtIGNvbXByYW5kbyAxNiBmaWd1cml0YXMKMy4gIEVsIG51bWVybyBkZSBmaWd1cml0YXMgcXVlIGhheSBxdWUgY29tcHJhciwgZW4gbWVkaWEsIHBhcmEgdGVuZXIgcHJvYmFiaWxpZGFkIGRlbCA5MCUgZGUgY29tcGxldGFyIGVsIGFsYnVtCgpTZWE6CgpgYGB7cn0KcmVwZXRpY2lvbmVzIDwtIGMoKQpOUmVwcyA8LSAxMDAwCmZvciAoaSBpbiAxOk5SZXBzKXsKICByZXBldGljaW9uZXMgPC0gYXBwZW5kKHJlcGV0aWNpb25lcywgY3VhbnRhc0ZpZ3VzKDYpKQp9CgpoaXN0KHJlcGV0aWNpb25lcykKCmluY2lzb19hIDwtIHJvdW5kKG1lYW4ocmVwZXRpY2lvbmVzKSkKcHJpbnQocGFzdGUoImEpIEVuIHByb21lZGlvIGxhIGNhbnRpZGFkIGRlIGZpZ3VyaXRhcyBxdWUgaGF5IHF1ZSBjb21wcmFyIGVzIGRlOiIsIGluY2lzb19hKSkKaW5jaXNvX2IgPC0gbGVuZ3RoKHJlcGV0aWNpb25lc1tyZXBldGljaW9uZXMgPD0gMTZdKSAvIGxlbmd0aChyZXBldGljaW9uZXMpCnByaW50KHBhc3RlKCJiKSBMYSBwcm9iYWJpbGlkYWQgZGUgY29tcGxldGFyIGVsIGFsYnVtIGNvbXByYW5kbyAxNiBmaWd1cml0YXMgZXMgZGU6IiwgaW5jaXNvX2IpKQoKcHJvYmFfZGVfY29tcGxldGFyIDwtIDAKaSA8LSAwCndoaWxlIChwcm9iYV9kZV9jb21wbGV0YXIgPCAwLjkpewogIHByb2JhX2RlX2NvbXBsZXRhciA8LSAobGVuZ3RoKHJlcGV0aWNpb25lc1tyZXBldGljaW9uZXMgPD0gaV0pIC8gbGVuZ3RoKHJlcGV0aWNpb25lcykpCiAgaSA8LSBpICsgMQp9CmluY2lzb19jIDwtIGkKcHJpbnQocGFzdGUoImMpIExhIGNhbnRpZGFkIGRlIGZpZ3VzIHF1ZSBoYXkgcXVlIGNvbXByYXIgcGFyYSB0ZW5lciBwcm9iYSA5MCBlcyIsIGluY2lzb19jKSkKCmBgYAoKIyBDYXNvIEludGVybWVkaW8KCkNhbGN1bGFyIE5yZXA9MTAwIHZlY2VzIGxhIGZ1bmNpwrRvbiBjdWFudGFzRmlndXMoZmlndXNUb3RhbD02NDApIHV0aWxpemFuZG8KZmlndXNUb3RhbD02NDAgeSBndWFyZGFyIGxvcyByZXN1bHRhZG9zIG9idGVuaWRvcyBlbiBjYWRhIHJlcGV0aWNpwrRvbiBlbiB1bmEKbGlzdGEuIENvbiBsb3MgcmVzdWx0YWRvcyBvYnRlbmlkb3MgZXN0aW1hciBjdcK0YW50YXMgZmlndXJpdGFzIGhheSBxdWUgY29tcHJhciwgZW4KcHJvbWVkaW8sIHBhcmEgY29tcGxldGFyIGVsIMK0YWxidW0gKGRlIDY0MCBmaWd1cml0YXMpLgoKYGBge3J9CnJlcGV0aWNpb25lcyA8LSBjKCkKTlJlcHMgPC0gMTAwCmZvciAoaSBpbiAxOk5SZXBzKXsKICByZXBldGljaW9uZXMgPC0gYXBwZW5kKHJlcGV0aWNpb25lcywgY3VhbnRhc0ZpZ3VzKDY0MCkpCn0KCmluY2lzb19hIDwtIHJvdW5kKG1lYW4ocmVwZXRpY2lvbmVzKSkKcHJpbnQocGFzdGUoImEpIEVuIHByb21lZGlvIGxhIGNhbnRpZGFkIGRlIGZpZ3VyaXRhcyBxdWUgaGF5IHF1ZSBjb21wcmFyIGVzIGRlOiIsIGluY2lzb19hKSkKYGBgCgojIENvbiBwYXF1ZXRlcwoKU2ltdWxhciBsYSBnZW5lcmFjacOzbiBkZSB1biBwYXF1ZXRlIGNvbiA1IGZpZ3VyaXRhcywgc2FiaWVuZG8gcXVlIGVsIMOhbGJ1bSBlcyBkZSA2NDAuIE5vdGVtb3MgcXVlLCBjw7NtbyBlbiBsYSB2aWRhIHJlYWwsIHB1ZWRlbiBoYWJlciBmaWd1cml0YXMgcmVwZXRpZGFzIGVuIHVuIHBhcXVldGUuCgpgYGB7cn0Kc2FtcGxlKDE6NjQwLCA1LCByZXBsYWNlID0gVFJVRSkKYGBgCgpJbXBsZW1lbnRhciB1bmEgZnVuY2nDs24gZ2VuUGFxdWV0ZShmaWd1c1RvdGFsLCBmaWd1c1BhcXVldGUpIHF1ZSBkYWRvIGVsCnRhbWHDsW8gZGVsIMOhbGJ1bSAoZmlndXNUb3RhbCkgeSBsYSBjYW50aWRhZCBkZSBmaWd1cml0YXMgcG9yIHBhcXVldGUgKGZpZ3VzUGFxdWV0ZSkKZ2VuZXJlIHVuIHBhcXVldGUgZGUgZmlndXJpdGFzIGFsIGF6YXIuIE5vdGVtb3MgcXVlLCBjw7NtbyBlbiBsYSB2aWRhIHJlYWwsIHB1ZWRlbgpoYWJlciBmaWd1cml0YXMgcmVwZXRpZGFzIGVuIHVuIHBhcXVldGUuCgpgYGB7cn0KZ2VuUGFxdWV0ZSA8LSBmdW5jdGlvbihmaWd1c1RvdGFsLCBmaWd1c1BhcXVldGUpIHsKICBwYXF1ZXRlIDwtIHNhbXBsZSgxOmZpZ3VzVG90YWwsIGZpZ3VzUGFxdWV0ZSwgcmVwbGFjZSA9IFRSVUUpCiAgcmV0dXJuKHBhcXVldGUpCn0KZ2VuUGFxdWV0ZSg2NDAsIDIpCmBgYAoKSW1wbGVtZW50YXIgdW5hIGZ1bmNpw7NuIGN1YW50b3NQYXF1ZXRlcyhmaWd1c1RvdGFsLCBmaWd1c1BhcXVldGUpIHF1ZQpkYWRvIGVsIHRhbWHDsW8gZGVsIMOhbGJ1bSAoZmlndXNUb3RhbCkgeSBsYSBjYW50aWRhZCBkZSBmaWd1cml0YXMgcG9yIHBhcXVldGUKKGZpZ3VzUGFxdWV0ZSkgc2ltdWxlIGVsIGxsZW5hZG8gZGVsIMOhbGJ1bSB5IGRldnVlbHZhIGN1w6FudG9zIHBhcXVldGVzIHNlIGRlYmllcm9uIGFkcXVpcmlyIHBhcmEgY29tcGxldGFybG8uCgpgYGB7cn0KY3VhbnRvc1BhcXVldGVzIDwtIGZ1bmN0aW9uKGZpZ3VzVG90YWwsIGZpZ3VzUGFxdWV0ZSkgewogIGFsYnVtIDwtIHJlcChGQUxTRSwgZmlndXNUb3RhbCkgCiAgcGFxdWV0ZXNfY29tcHJhZG9zIDwtIDAKICAKICB3aGlsZSAoYW55KGFsYnVtID09IEZBTFNFKSkgewogICAgcGFxdWV0ZSA8LSBnZW5QYXF1ZXRlKGZpZ3VzVG90YWwsIGZpZ3VzUGFxdWV0ZSkKICAgIGFsYnVtW3BhcXVldGVdIDwtIFRSVUUKICAgIHBhcXVldGVzX2NvbXByYWRvcyA8LSBwYXF1ZXRlc19jb21wcmFkb3MgKyAxCiAgfQogIAogIHJldHVybihwYXF1ZXRlc19jb21wcmFkb3MpCn0KCmN1YW50b3NQYXF1ZXRlcygxMDAsIDUpCmBgYAoKQ2FsY3VsYXIgTnJlcD0xMDAgdmVjZXMgbGEgZnVuY2nDs24gY3VhbnRvc1BhcXVldGVzLCB1dGlsaXphbmRvIGZpZ3VzVG90YWw9NjQwLCBmaWd1c1BhcXVldGU9NSB5IGd1YXJkZSBsb3MgcmVzdWx0YWRvcyBvYnRlbmlkb3MgZW4gdW5hIGxpc3RhLiBDYWxjdWxhcgoKMS4gIEVsIG7Dum1lcm8gZGUgZmlndXJpdGFzIGhheSBxdWUgY29tcHJhciwgZW4gbWVkaWEsIHBhcmEgY29tcGxldGFyIGVsIMOhbGJ1bS4KMi4gIExhIHByb2JhYmlsaWRhZCBkZSBjb21wbGV0YXIgZWwgw6FsYnVtIGNvbXByYW5kbyAzMDAgcGFxdWV0ZXMgZmlndXJpdGFzLgozLiAgRWwgbsO6bWVybyBkZSBmaWd1cml0YXMgcXVlIGhheSBxdWUgY29tcHJhciBwYXJhIHRlbmVyIHByb2JhYmlsaWRhZCBkZWwgOTAlIGRlIGNvbXBsZXRhciBlbCDDoWxidW0KCmBgYHtyfQpmaWd1c1RvdGFsIDwtIDY0MApmaWd1c1BhcXVldGUgPC0gNQpOcmVwIDwtIDEwMAoKY2FudF9maWd1cyA9IHJlcGxpY2F0ZShOcmVwLCBjdWFudG9zUGFxdWV0ZXMoZmlndXNUb3RhbCwgZmlndXNQYXF1ZXRlKSkKCiMgRWwgbsO6bWVybyBkZSBmaWd1cml0YXMgaGF5IHF1ZSBjb21wcmFyLCBlbiBtZWRpYSwgcGFyYSBjb21wbGV0YXIgZWwgw6FsYnVtLgptZWRpYV9wYXF1ZXRlcyA8LSBtZWFuKGNhbnRfZmlndXMpCnByaW50KHBhc3RlKCJOw7ptZXJvIG1lZGlvIGRlIHBhcXVldGVzIHBhcmEgY29tcGxldGFyIGVsIMOhbGJ1bToiLCBtZWRpYV9wYXF1ZXRlcykpCgojIExhIHByb2JhYmlsaWRhZCBkZSBjb21wbGV0YXIgZWwgw6FsYnVtIGNvbXByYW5kbyAzMDAgcGFxdWV0ZXMgZmlndXJpdGFzLgpwcm9iXzMwMF9wYXF1ZXRlcyA8LSBzdW0oY2FudF9maWd1cyA8PSAzMDApIC8gTnJlcApwcmludChwYXN0ZSgiUHJvYmFiaWxpZGFkIGRlIGNvbXBsZXRhciBlbCDDoWxidW0gY29uIDMwMCBwYXF1ZXRlczoiLCBwcm9iXzMwMF9wYXF1ZXRlcykpCgojIEVsIG7Dum1lcm8gZGUgZmlndXJpdGFzIHF1ZSBoYXkgcXVlIGNvbXByYXIgcGFyYSB0ZW5lciBwcm9iYWJpbGlkYWQgZGVsIDkwJSBkZSBjb21wbGV0YXIgZWwgw6FsYnVtCnByb2JhX2RlX2NvbXBsZXRhciA8LSAwCmkgPC0gMAp3aGlsZSAocHJvYmFfZGVfY29tcGxldGFyIDwgMC45KXsKICBwcm9iYV9kZV9jb21wbGV0YXIgPC0gKHN1bShjYW50X2ZpZ3VzIDw9IGkpKSAvIE5yZXAKICBpIDwtIGkgKyAxCn0KcHJpbnQocGFzdGUoIkVsIG7Dum1lcm8gZGUgcGFxdWV0ZXMgcGFyYSB0ZW5lciBwcm9iYWJpbGlkYWQgZGVsIDkwJSBlcyIsIGkpKQpgYGAK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKIyBUcmFiYWpvIFByw6FjdGljbyBGaWd1cml0YXMKCiMjIENvcnppbmkgRmFicml6aW8sIFBvbG9udWVyIEpvYXF1aW4KCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKIyBQcmltZXJhIFNpbXBsaWZpY2FjacOzbgoKU2ltdWxhciBlbCBuw7ptZXJvIGRlIHVuYSBmaWd1cml0YSBlbGVnaWRhIGFsIGF6YXIgc2kgZWwgYWxiw7ptIGVzIGRlIDYgZmlndXJpdGFzCgpgYGB7cn0KYWxidW0gPC0gMTo2CmZpZ3VyaXRhID0gc2FtcGxlKGFsYnVtLCBzaXplID0gMSwgcmVwbGFjZSA9IEZBTFNFKQoKZmlndXJpdGEKYGBgCgpTaW11bGFyIGVsIGxsZW5hZG8gZGUgdW4gYWxidW0gZGUgNiBmaWd1cml0YXMgZSBpbmRpY2FyIGN1YW50YXMgZmlndXJpdGFzIHNlIGRlYmllcm9uIGNvbXByYXIgcGFyYSBjb21wbGV0YXJsby4KCmBgYHtyfQoKYWxidW0gPC0gMTo2CmNvbXBsZXRhZGFzIDwtICgxOjYpICogMApjb250YWRvciA8LSAwCgpzdW1hIDwtIHN1bShjb21wbGV0YWRhcykKd2hpbGUgKHN1bWEgPCBsZW5ndGgoYWxidW0pKXsKICAgZmlndXJpdGEgPSBzYW1wbGUoYWxidW0sIHNpemUgPSAxLCByZXBsYWNlID0gRkFMU0UpCiAgIGNvbnRhZG9yIDwtIGNvbnRhZG9yICsgMQogICBjb21wbGV0YWRhc1tmaWd1cml0YV0gPSAxCiAgIHN1bWEgPSBzdW0oY29tcGxldGFkYXMpCn0KCmNvbnRhZG9yCmBgYAoKSW1wbGVtZW50YXIgdW5hIGZ1bmNpb24gY3VhbnRhc0ZpZ3VzKGZpZ3VzVG90YWwpIHF1ZSwgZGFkbyBlbCB0YW1hw7FvIGRlbCBhbGJ1bSAoZmlndXNUb3RhbCksIHNpbXVsZSBzdSBsbGVuYWRvIHkgZGV2dWVsdmEgbGEgY2FudGlkYWQgZGUgZmlndXJpdGFzIHF1ZSBzZSBkZWJpZXJvbiBhZHF1aXJpciBwYXJhIGNvbXBsZXRhcmxvLgoKYGBge3J9CmN1YW50YXNGaWd1cyA8LSBmdW5jdGlvbih0YW0pewogIGFsYnVtIDwtIDE6dGFtCiAgY29tcGxldGFkYXMgPC0gKDE6dGFtKSAqIDAKICBjb250YWRvciA8LSAwCgogIHN1bWEgPC0gc3VtKGNvbXBsZXRhZGFzKQogIHdoaWxlIChzdW1hIDwgbGVuZ3RoKGFsYnVtKSl7CiAgICBmaWd1cml0YSA9IHNhbXBsZShhbGJ1bSwgc2l6ZSA9IDEsIHJlcGxhY2UgPSBGQUxTRSkKICAgIGNvbnRhZG9yIDwtIGNvbnRhZG9yICsgMQogICAgY29tcGxldGFkYXNbZmlndXJpdGFdID0gMQogICAgc3VtYSA9IHN1bShjb21wbGV0YWRhcykKICB9CgogIHJldHVybihjb250YWRvcikgCn0KCmN1YW50YXNGaWd1cyg2KQpgYGAKCkNhbGN1bGFyIE5yZXA9MTAwMCB2ZWNlcyBsYSBmdW5jaW9uIGFudGVyaW9yIHV0aWxpemFuZG8gZmlndXNUb3RhbD02IHkgZ3VhcmRlIGxvcyByZXN1bHRhZG9zIG9idGVuaWRvcyBlbiBjYWRhIHJlcGV0aWNpb24uIENvbiBsb3MgcmVzdWx0YWRvcyBvYnRlbmlkb3MgcGFyYSB1biBhbGJ1bSBkZSBzZWlzIGZpZ3VyaXRhcywgZXN0aW1hcjoKCjEuICBFbCBudW1lcm8gZGUgZmlndXJpdGFzIGhheSBxdWUgY29tcHJhciwgZW4gbWVkaWEsIHBhcmEgY29tcGxldGFyIGVsIGFsYnVtCjIuICBMYSBwcm9iYWJpbGlkYWQgZGUgY29tcGxldGFyIGVsIGFsYnVtIGNvbXByYW5kbyAxNiBmaWd1cml0YXMKMy4gIEVsIG51bWVybyBkZSBmaWd1cml0YXMgaGF5IHF1ZSBjb21wcmFyLCBlbiBtZWRpYSwgcGFyYSBjb21wbGV0YXIgZWwgYWxidW0KClNlYToKCmBgYHtyfQpyZXBldGljaW9uZXMgPC0gYygpCk5SZXBzIDwtIDEwMDAKZm9yIChpIGluIDE6TlJlcHMpewogIHJlcGV0aWNpb25lcyA8LSBhcHBlbmQocmVwZXRpY2lvbmVzLCBjdWFudGFzRmlndXMoNikpCn0KCmluY2lzb19hIDwtIHJvdW5kKG1lYW4ocmVwZXRpY2lvbmVzKSkKcHJpbnQocGFzdGUoImEpIEVuIHByb21lZGlvIGxhIGNhbnRpZGFkIGRlIGZpZ3VyaXRhcyBxdWUgaGF5IHF1ZSBjb21wcmFyIGVzIGRlOiIsIGluY2lzb19hKSkKaW5jaXNvX2IgPC0gbGVuZ3RoKHJlcGV0aWNpb25lc1tyZXBldGljaW9uZXMgPT0gMTZdKSAvIGxlbmd0aChyZXBldGljaW9uZXMpCnByaW50KHBhc3RlKCJiKSBMYSBwcm9iYWJpbGlkYWQgZGUgY29tcGxldGFyIGVsIGFsYnVtIGNvbXByYW5kbyAxNiBmaWd1cml0YXMgZXMgZGU6IiwgaW5jaXNvX2IpKQoKCmhpc3QocmVwZXRpY2lvbmVzKQpgYGAKCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLgoKVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLgo=</div>
 
 
 
